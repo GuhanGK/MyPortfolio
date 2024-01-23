@@ -34,7 +34,7 @@ const StyledHome = styled.div`
     }
     .my_profile_details{
         position: absolute;
-        margin-top: -105px;
+        margin-top: -30px;
         margin-left: 480px;
         text-align: justify;
         .name_text{
@@ -47,6 +47,7 @@ const StyledHome = styled.div`
     .home_action_btns_wrap{
         display: flex;
         gap: 1rem;
+        margin-top: 1.5rem;
         .hire_me_btn{
             color: #fff;
             cursor: pointer;

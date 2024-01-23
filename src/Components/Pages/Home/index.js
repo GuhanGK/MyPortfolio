@@ -2,6 +2,7 @@ import React from "react";
 import StyledHome from "./style";
 import ProfileImg from "../../../assets/ProfileImg.jpg"
 import { Button, Col, Row } from "react-bootstrap";
+import { FaArrowDown } from "react-icons/fa";
 
 const Home = () => {
     return (
@@ -23,7 +24,7 @@ const Home = () => {
 
                             <div className="home_action_btns_wrap">
                                 <Button className="hire_me_btn">Hire me</Button>
-                                <Button className="download_cv_btn">Download CV</Button>
+                                <Button className="download_cv_btn">Download CV <FaArrowDown /></Button>
                             </div>
                         </div>
                     </Col>
