@@ -44,19 +44,19 @@ const Home = () => {
                     <Col className="profile_image_col">
                         <div className="summa_circle">
                             <div className="html_logo_box">
-                                <img src={htmlImg} alt="html-img" />
+                                <img src={htmlImg} alt="html" />
                             </div>
                             <div className="css_logo_box">
-                                <img src={cssImg} alt="css-image" />
+                                <img src={cssImg} alt="css" />
                             </div>
                             <div className="js_logo_box">
-                                <img src={jsImg} alt="js-image" />
+                                <img src={jsImg} alt="js" />
                             </div>
                             <div className="react_logo_box">
-                                <img src={reactImg} alt="react-image" />
+                                <img src={reactImg} alt="react" />
                             </div>
                             <div className="profile_img_circle">
-                                <img src={ProfileImg} alt="Profile-Image" className="profile_img" />
+                                <img src={ProfileImg} alt="Profile" className="profile" />
                             </div>
                         </div>
                     </Col>

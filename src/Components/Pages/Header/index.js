@@ -16,7 +16,7 @@ const Header = () => {
         <>
             <StyledHeader>
                 <Navbar className="navbar_container">
-                    <Navbar.Brand href="" className="nav_logo">Navbar</Navbar.Brand>
+                    <Navbar.Brand href="" className="nav_logo">portfolio</Navbar.Brand>
                     <Nav className="mr-auto nav_items">
                         <Nav.Link onClick={() => scrollToAbout("home")} className="nav_link">Home</Nav.Link>
                         <Nav.Link onClick={() => scrollToAbout("about")} className="nav_link">About Me</Nav.Link>

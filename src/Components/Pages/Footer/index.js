@@ -27,7 +27,7 @@ const Footer = () => {
                         </Col>
                         <Col className="footer_media_contact_box">
                             <div className="contact_img_box">
-                                <img src={ContactImg} alt="Contact-Image" className="contact_img" />
+                                <img src={ContactImg} alt="Contact" className="contact_img" />
                             </div>
                         </Col>
                     </Row>

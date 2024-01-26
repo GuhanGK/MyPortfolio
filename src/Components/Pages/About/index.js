@@ -23,7 +23,7 @@ const About = () => {
                 <Row className="about_container">
                     <Col className="profile_image_col">
                         <div className="profile_img_circle">
-                            <img src={ProfileImg} alt="Profile-Image" className="profile_img" />
+                            <img src={ProfileImg} alt="Profile" className="profile_img" />
                         </div>
                     </Col>
                     <Col className="about_main_contents_wrap">

@@ -13,12 +13,17 @@ const StyledHeader = styled.div`
         padding: 16px 26px;
     }
     .nav_logo{
-        opacity: 0;
+        color: #000000;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        text-decoration: none;
     }
     .nav_items{
         width: 50%;
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
     }
 
     .nav_link{
