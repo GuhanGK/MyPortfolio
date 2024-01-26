@@ -7,7 +7,9 @@ const StyledAbout = styled.div`
         padding: 4rem 0;
     }
     .profile_image_col{
-        width: 30%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
     }
     .profile_img_circle{
         width: 300px;
@@ -71,13 +73,17 @@ const StyledAbout = styled.div`
         }
     }
     .about_main_contents_wrap{
-        width: 40%;
+        width: 75%;
         text-align: left;
+    }
+    .skills_explain{
+        width: 75%;
     }
     .skills_wrapper{
         display: flex;
         gap: 10px;
     }
+
     .skill_pointer{
         width: 20px;
         height: 20px;
@@ -105,6 +111,13 @@ const StyledAbout = styled.div`
         font: normal normal normal 16px/20px;
         color: #181818;
         opacity: 0.4;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .skills_arrow{
+        color: #181818;
+        opacity: 1;
     }
     .download_cv_btn{
         cursor: pointer;
@@ -114,6 +127,45 @@ const StyledAbout = styled.div`
         height: 40px;
         box-shadow: 0px 3px 6px #00000014;
         background: transparent linear-gradient(180deg, #e7f0f9 0%, #f8fbfe 100%) 0% 0% no-repeat padding-box;
+    }
+    @media (min-width: 320px) and (max-width: 480px){
+        .about_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile_image_col {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            display: none;
+        }
+        .about_main_contents_wrap {
+            width: 100%;
+            text-align: left;
+            padding: 1rem 2rem;
+        }
+        .footer_contact_wrapper {
+            flex-direction: column;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 766px){
+        .about_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile_image_col {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            display: none;
+        }
+        .about_main_contents_wrap {
+            width: 100%;
+            text-align: left;
+            padding: 1rem 2rem;
+        }
     }
 `;
 

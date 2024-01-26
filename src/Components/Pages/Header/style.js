@@ -21,6 +21,15 @@ const StyledHeader = styled.div`
         justify-content: space-evenly;
     }
 
+    .nav_link{
+        text-wrap: nowrap;
+        color: #e60280;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
 `;
 
 export default StyledHeader;
