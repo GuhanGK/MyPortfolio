@@ -7,6 +7,16 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const About = () => {
     const [skills, setSkills] = useState("skills")
+    const downloadResume = () => {
+        const pdfUrl = "Resume.pdf";
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "Resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <>
             <StyledAbout>
@@ -99,7 +109,7 @@ const About = () => {
                             </>
                         }
                         <br />
-                        <Button className="download_cv_btn">Download CV <FaArrowDown /></Button>
+                        <Button className="download_cv_btn" onClick={downloadResume}>Download CV <FaArrowDown /></Button>
                     </Col>
                 </Row>
             </StyledAbout>

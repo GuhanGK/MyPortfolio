@@ -9,6 +9,15 @@ import { Button, Col, Row } from "react-bootstrap";
 import { FaArrowDown } from "react-icons/fa";
 
 const Home = () => {
+    const downloadResume = () => {
+        const pdfUrl = "Resume.pdf";
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "Resume.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
     return (
         <>
             <StyledHome>
@@ -28,7 +37,7 @@ const Home = () => {
 
                             <div className="home_action_btns_wrap">
                                 <Button className="hire_me_btn">Hire me</Button>
-                                <Button className="download_cv_btn">Download CV <FaArrowDown /></Button>
+                                <Button className="download_cv_btn" onClick={downloadResume}>Download CV <FaArrowDown /></Button>
                             </div>
                         </div>
                     </Col>
