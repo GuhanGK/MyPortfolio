@@ -56,7 +56,7 @@ const Home = () => {
                                 <img src={reactImg} alt="react" />
                             </div>
                             <div className="profile_img_circle">
-                                <img src={ProfileImg} alt="Profile" className="profile" />
+                                <img src={ProfileImg} alt="Profile" className="profile_img" />
                             </div>
                         </div>
                     </Col>
