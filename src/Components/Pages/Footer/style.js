@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledFooter = styled.div`
     .footer_container{
-        padding: 4rem 0;
+        padding: 4rem 1rem;
     }
     .footer_contact_wrapper{
         display: flex;

@@ -55,6 +55,11 @@ const StyledWork = styled.div`
         font-weight: 400;
         margin-bottom: 1.5rem;
     }
+    @media (min-width: 320px) and (max-width: 767px){
+        .name_text {
+            width: 100%;
+        }
+    }
 `;
 
 export default StyledWork;

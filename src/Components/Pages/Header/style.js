@@ -7,10 +7,10 @@ const StyledHeader = styled.div`
         top: 0;
         z-index: 99;
         background: transparent linear-gradient(180deg, #e6eff8 0%, #f4f8fc 100%) 0% 0% no-repeat padding-box;
-        /* background-color: #f4f8fc; */
         display: flex;
         justify-content: space-between;
         padding: 16px 26px;
+        transition: background-color 0.3s ease-in-out;
     }
     .nav_logo{
         color: #000000;
@@ -35,6 +35,33 @@ const StyledHeader = styled.div`
         text-decoration: none;
     }
 
+    @media (min-width: 320px) and (max-width: 767px){
+         .navbar_container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .hamburger_icon {
+            display: block;
+        }
+        .nav_items {
+            display: none;
+        }
+        .responsive_nav_items {
+            display: ${props => props.clickHamburger ? 'flex' : 'none'};
+            flex-direction: column;
+            gap: 8px;
+            padding-top: 1rem;
+        }
+        .nav_link {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        .nav_logo {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
 `;
 
 export default StyledHeader;

@@ -148,6 +148,9 @@ const StyledAbout = styled.div`
         .footer_contact_wrapper {
             flex-direction: column;
         }
+        .skills_explain {
+            width: 100%;
+        }
     }
     @media (min-width: 481px) and (max-width: 766px){
         .about_container {
@@ -165,6 +168,9 @@ const StyledAbout = styled.div`
             width: 100%;
             text-align: left;
             padding: 1rem 2rem;
+        }
+        .skills_explain {
+            width: 100%;
         }
     }
 `;
