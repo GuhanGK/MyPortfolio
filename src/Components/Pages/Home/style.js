@@ -342,6 +342,7 @@ const StyledHome = styled.div`
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
             padding: 2rem;
+            gap: 1rem;
         }
         .portfolio_my_details {
             width: 100%;
@@ -380,8 +381,8 @@ const StyledHome = styled.div`
                 place-items: center;
                 transform: translate(0rem, -2rem);
                 img{
-                    width: 200px;
-                    height: 220px;
+                    width: 162px;
+                    height: 176px;
                     border-radius: 50%;
                     position: absolute;
                 }
@@ -395,27 +396,27 @@ const StyledHome = styled.div`
         }
         li:nth-last-child(1){
             opacity: 1;
-            transform: translate(14rem, 7rem);
+            transform: translate(13rem, 6rem);
         }
         li:nth-last-child(2){
             opacity: 1;
-            transform: translate(6rem, 12.5rem);
+            transform: translate(6rem, 10rem);
         }
         li:nth-last-child(3){
             opacity: 1;
-            transform: translate(-2.4rem, 7rem);
+            transform: translate(-1.3rem, 6rem);
         }
         li:nth-last-child(4){
             opacity: 1;
-            transform: translate(-1rem, -5rem);
+            transform: translate(-0.3rem, -3rem);
         }
         li:nth-last-child(5){
             opacity: 1;
-            transform: translate(6rem, -8rem);
+            transform: translate(6rem, -6.5rem);
         }
         li:nth-last-child(6){
             opacity: 1;
-            transform: translate(13rem, -5rem);
+            transform: translate(12.5rem, -3rem);
         }
     }
 `;
