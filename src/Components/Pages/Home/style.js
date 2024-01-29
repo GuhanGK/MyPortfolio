@@ -114,30 +114,43 @@ const StyledHome = styled.div`
         /* animation: orbit 60s linear reverse infinite; */
         img{
             width: 60px;
+            transform: rotate(-180deg);
         }
     }
     li:nth-last-child(1){
         opacity: 1;
+        background: #fff;
+        box-shadow: 0px 3px 6px #00000014;
         transform: translate(18rem, 10rem);
     }
     li:nth-last-child(2){
         opacity: 1;
+        background: #fff;
+        box-shadow: 0px 3px 6px #00000014;
         transform: translate(6rem, 16rem);
     }
     li:nth-last-child(3){
         opacity: 1;
+        background: #fff;
+        box-shadow: 0px 3px 6px #00000014;
         transform: translate(-6rem, 10rem);
     }
     li:nth-last-child(4){
         opacity: 1;
+        background: #fff;
+        box-shadow: 0px 3px 6px #00000014;
         transform: translate(-6rem, -5rem);
     }
     li:nth-last-child(5){
         opacity: 1;
+        background: #fff;
+        box-shadow: 0px 3px 6px #00000014;
         transform: translate(6rem, -12rem);
     }
     li:nth-last-child(6){
         opacity: 1;
+        background: #fff;
+        box-shadow: 0px 3px 6px #00000014;
         transform: translate(18rem, -5rem);
     }
 
@@ -245,7 +258,7 @@ const StyledHome = styled.div`
             text-wrap: wrap;
         }
     }
-    @media (min-width: 320px) and (max-width: 766px){
+    @media (min-width: 481px) and (max-width: 766px){
         .portfolio_home_page {
             height: 100vh;
             display: grid;
@@ -268,6 +281,7 @@ const StyledHome = styled.div`
         }
         .profile_image_col {
             width: 100%;
+            margin-bottom: 5rem;
             display: flex;
             justify-content: center;
         }
@@ -344,6 +358,7 @@ const StyledHome = styled.div`
         }
         .profile_image_col {
             width: 100%;
+            margin-bottom: 5rem;
             display: flex;
             justify-content: center;
         }
