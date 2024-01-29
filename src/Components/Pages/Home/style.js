@@ -337,7 +337,7 @@ const StyledHome = styled.div`
     }
     @media (min-width: 320px) and (max-width: 480px){
         .portfolio_home_page {
-            height: 100vh;
+            height: 950px;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
