@@ -68,18 +68,6 @@ const Home = () => {
                                     <img src={muiImg} alt="react" />
                                 </li>
                             </ul>
-                            {/* <div className="css_logo_box">
-                                <img src={cssImg} alt="css" />
-                            </div>
-                            <div className="js_logo_box">
-                                <img src={jsImg} alt="js" />
-                            </div>
-                            <div className="react_logo_box">
-                                <img src={reactImg} alt="react" />
-                            </div>
-                            <div className="profile_img_circle">
-                                <img src={ProfileImg} alt="Profile" className="profile_img" />
-                            </div> */}
                         </div>
                     </Col>
                 </Row>
