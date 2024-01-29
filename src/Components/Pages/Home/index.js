@@ -4,7 +4,9 @@ import ProfileImg from "../../../assets/ProfileImg.jpg"
 import htmlImg from "../../../assets/HTMLlogo.png"
 import cssImg from "../../../assets/csslogo.png"
 import jsImg from "../../../assets/jslogo.png"
-import reactImg from "../../../assets/react-logo-vector-1.svg"
+import boostrapImg from "../../../assets/boostrap.png"
+import muiImg from "../../../assets/mui.png"
+import reactImg from "../../../assets/react-logo-vector-1.png"
 import { Button, Col, Row } from "react-bootstrap";
 import { FaArrowDown } from "react-icons/fa";
 
@@ -42,11 +44,31 @@ const Home = () => {
                         </div>
                     </Col>
                     <Col className="profile_image_col">
-                        <div className="summa_circle">
-                            <div className="html_logo_box">
-                                <img src={htmlImg} alt="html" />
+                        <div className="orbit_container">
+                            <div className="profile_img_circle">
+                                <img src={ProfileImg} alt="Profile" className="profile_img" />
                             </div>
-                            <div className="css_logo_box">
+                            <ul>
+                                <li>
+                                    <img src={htmlImg} alt="html" />
+                                </li>
+                                <li>
+                                    <img src={cssImg} alt="css" />
+                                </li>
+                                <li>
+                                    <img src={jsImg} alt="js" />
+                                </li>
+                                <li>
+                                    <img src={boostrapImg} alt="js" />
+                                </li>
+                                <li>
+                                    <img src={reactImg} alt="react" />
+                                </li>
+                                <li>
+                                    <img src={muiImg} alt="react" />
+                                </li>
+                            </ul>
+                            {/* <div className="css_logo_box">
                                 <img src={cssImg} alt="css" />
                             </div>
                             <div className="js_logo_box">
@@ -57,7 +79,7 @@ const Home = () => {
                             </div>
                             <div className="profile_img_circle">
                                 <img src={ProfileImg} alt="Profile" className="profile_img" />
-                            </div>
+                            </div> */}
                         </div>
                     </Col>
                 </Row>
