@@ -1,29 +1,69 @@
-import React from 'react';
-import './App.css';
-import Header from './Components/Pages/Header';
-import Footer from './Components/Pages/Footer';
-import Home from './Components/Pages/Home';
-import About from './Components/Pages/About';
-import MyWork from './Components/Pages/MyWork';
+import React from "react";
+import "./App.css";
+import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+
+import Header from "./Components/Pages/Header";
+import Footer from "./Components/Pages/Footer";
+import Home from "./Components/Pages/Home";
+import About from "./Components/Pages/About";
+import MyWork from "./Components/Pages/MyWork";
+
+const navItems = [
+  {
+    name: "Home",
+    link: "/",
+    icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "About",
+    link: "/about",
+    icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+  {
+    name: "Contact",
+    link: "/contact",
+    icon: <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />,
+  },
+];
+
+const content = [
+  {
+    title: "Collaborative Editing",
+    description:
+      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+  },
+  {
+    title: "Real time changes",
+    description:
+      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+  },
+  {
+    title: "Version control",
+    description:
+      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+  },
+];
 
 function App() {
   return (
-    <div className="App">
-      <Header />
+    <div className="">
+      <Header navItems={navItems} />
       <div id="home">
         <Home />
       </div>
       <div id="about">
         <About />
       </div>
-      <div id='mywork'>
-        <MyWork />
+      <div id="mywork">
+        <MyWork content={content} />
       </div>
-      <div id='footer'>
+      <div id="footer">
         <Footer />
       </div>
     </div>
   );
 }
+
+
 
 export default App;
