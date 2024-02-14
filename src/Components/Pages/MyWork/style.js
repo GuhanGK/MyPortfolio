@@ -1,7 +1,61 @@
 import styled from "styled-components";
 
 const StyledWork = styled.div`
-    .my_work_container{
+    @media (min-width: 320px) and (max-width: 767px){
+        .work_details_section{
+            display: block;
+        }
+        .work_projects_title{
+            margin-top: 1rem !important;
+        }
+        .summa{
+            display: flex;
+            flex-direction: column;
+            padding: 12px 16px !important;
+        }
+        .resposive_work_images{
+            width: 100%;
+            height: 15rem;
+            margin-top: 1.5rem;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 991px){
+        .work_details_section{
+            display: block;
+        }
+        .work_projects_title{
+            margin-top: 1rem !important;
+        }
+        .summa{
+            display: flex;
+            flex-direction: column;
+            padding: 12px 16px !important;
+        }
+        .resposive_work_images{
+            width: 70%;
+            height: 26rem;
+            margin-top: 1.5rem;
+        }
+    }
+    @media (min-width: 992px) and (max-width: 1023px){
+        .work_details_section{
+            display: block;
+        }
+        .work_projects_title{
+            margin-top: 1rem !important;
+        }
+        .summa{
+            display: flex;
+            flex-direction: column;
+            padding: 12px 16px !important;
+        }
+        .resposive_work_images{
+            width: 70%;
+            height: 26rem;
+            margin-top: 1.5rem;
+        }
+    }
+    /* .my_work_container{
         background: #ECF3FA;
         padding: 2.4rem 1rem;
     }
@@ -59,7 +113,7 @@ const StyledWork = styled.div`
         .name_text {
             width: 100%;
         }
-    }
+    } */
 `;
 
 export default StyledWork;

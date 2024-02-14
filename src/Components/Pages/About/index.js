@@ -29,7 +29,7 @@ const About = () => {
                     <Col className="about_main_contents_wrap">
                         <p className="about_me_text">About Me</p>
                         <p className="name_text">1.5 Year's Experience on Frontend Developer</p>
-                        <span>
+                        <span className="about_profession_content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
                         </span>
 
@@ -109,7 +109,9 @@ const About = () => {
                             </>
                         }
                         <br />
-                        <Button className="download_cv_btn" onClick={downloadResume}>Download CV <FaArrowDown /></Button>
+                        <Button className="download_btn" onClick={downloadResume}>
+                            <FaArrowDown /> Download CV
+                        </Button>
                     </Col>
                 </Row>
             </StyledAbout>
