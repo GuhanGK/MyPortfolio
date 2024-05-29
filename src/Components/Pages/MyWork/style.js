@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
 const StyledWork = styled.div`
-    // .summa{
-    //     width: 100%;
-    //     height: 80vh;
-    // }
+.scroll_img_box::-webkit-scrollbar {
+    display: none;
+  }
     @media (min-width: 320px) and (max-width: 767px){
         .work_details_section{
             display: block;
@@ -12,9 +11,7 @@ const StyledWork = styled.div`
         .work_projects_title{
             margin-top: 1rem !important;
         }
-        .summa{
-            // width: 100%;
-            // height: 50vh;
+        .scroll_img_box{
             display: flex;
             flex-direction: column;
             padding: 12px 16px !important;
@@ -32,9 +29,7 @@ const StyledWork = styled.div`
         .work_projects_title{
             margin-top: 1rem !important;
         }
-        .summa{
-            // width: 100%;
-            // height: 50vh;
+        .scroll_img_box{
             display: flex;
             flex-direction: column;
             padding: 12px 16px !important;
@@ -52,9 +47,7 @@ const StyledWork = styled.div`
         .work_projects_title{
             margin-top: 1rem !important;
         }
-        .summa{
-            // width: 100%;
-            // height: 50vh;
+        .scroll_img_box{
             display: flex;
             flex-direction: column;
             padding: 12px 16px !important;

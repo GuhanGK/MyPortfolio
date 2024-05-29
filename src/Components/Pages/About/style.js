@@ -41,7 +41,7 @@ const StyledAbout = styled.div`
     color: #fff;
   }
   .about_me_text {
-    color: #e60280;
+    color: floralwhite;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;

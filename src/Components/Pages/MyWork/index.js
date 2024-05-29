@@ -51,7 +51,7 @@ const MyWork = ({ content }) => {
           animate={{
             backgroundColor: backgroundColors[activeCard % backgroundColors.length],
           }}
-          className="summa h-[30rem] overflow-y-auto flex  relative justify-between space-x-10  px-20"
+          className="scroll_img_box h-[30rem] overflow-y-auto flex  relative justify-between space-x-10  px-20"
           ref={ref}
         >
           <div className="div work_details_section relative flex items-start px-2">
