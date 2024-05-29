@@ -1,8 +1,6 @@
-
 import React, { useRef } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
-
 
 import forsyte from "../../../assets/forsyte.jpeg";
 import trekrImg from "../../../assets/treke.png";
@@ -18,7 +16,7 @@ const MyWork = ({ content }) => {
   });
   const cardLength = content.length;
 
-  console.log("activeCard---->", activeCard)
+  console.log("activeCard---->", activeCard);
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     const cardsBreakpoints = content.map((_, index) => index / cardLength);
@@ -42,14 +40,17 @@ const MyWork = ({ content }) => {
       <StyledWork>
         <motion.div
           animate={{
-            backgroundColor: backgroundColors[activeCard % backgroundColors.length],
+            backgroundColor:
+              backgroundColors[activeCard % backgroundColors.length],
           }}
-          className="flex justify-center items-center text-white text-center font-bold text-5xl p-3 ">
+          className="flex justify-center items-center text-white text-center font-bold text-5xl p-3 "
+        >
           <h1>Work</h1>
         </motion.div>
         <motion.div
           animate={{
-            backgroundColor: backgroundColors[activeCard % backgroundColors.length],
+            backgroundColor:
+              backgroundColors[activeCard % backgroundColors.length],
           }}
           className="scroll_img_box h-[30rem] overflow-y-auto flex  relative justify-between space-x-10  px-20"
           ref={ref}
@@ -57,7 +58,10 @@ const MyWork = ({ content }) => {
           <div className="div work_details_section relative flex items-start px-2">
             <div className="max-w-2xl">
               {content.map((item, index) => (
-                <div key={item.title + index} className="my-20 work_projects_title">
+                <div
+                  key={item.title + index}
+                  className="my-20 work_projects_title"
+                >
                   <motion.h2
                     initial={{
                       opacity: 0,
@@ -83,7 +87,6 @@ const MyWork = ({ content }) => {
 
                   <motion.div
                     animate={{
-
                       background: `url(${images[activeCard % images.length]})`,
                       backgroundSize: "cover", // Change opacity to 1 to make the image visible
                     }}
@@ -96,7 +99,6 @@ const MyWork = ({ content }) => {
           </div>
           <motion.div
             animate={{
-
               background: `url(${images[activeCard % images.length]})`,
               backgroundSize: "cover", // Change opacity to 1 to make the image visible
             }}
