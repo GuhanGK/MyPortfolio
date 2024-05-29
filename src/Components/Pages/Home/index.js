@@ -82,6 +82,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {cn} from "../../../utils/cn"
+import StyledHome from "./style";
 
 export default function Home() {
   return (
@@ -113,6 +114,7 @@ export default function Home() {
       >
          Creative Developer
       </motion.span>
+      
     </LampContainer>
   );
 }
@@ -122,9 +124,10 @@ export const LampContainer = ({
   className,
 }) => {
   return (
+    <>
     <div
       className={cn(
-        "relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-slate-950 w-full  z-0",
+        "absolute flex min-h-screen flex-col items-center justify-center overflow-hidden bg-slate-950 w-full  z-0",
         className
       )}
     >
@@ -192,5 +195,22 @@ export const LampContainer = ({
         {children}
       </div>
     </div>
+    <StyledHome>
+    <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      </StyledHome>
+      </>
   );
 };
