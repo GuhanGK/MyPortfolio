@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 #about{
-    background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1);
+    /* background: linear-gradient(253deg, #0cc898, #1797d2, #864fe1); */
+    background: linear-gradient(253deg, #233349,#19212e,#203b5e);
     background-size: 300% 300%;
     -webkit-animation: Background 25s ease infinite;
     -moz-animation: Background 25s ease infinite;
