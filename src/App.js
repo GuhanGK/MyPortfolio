@@ -7,6 +7,7 @@ import Footer from "./Components/Pages/Footer";
 import Home from "./Components/Pages/Home";
 import About from "./Components/Pages/About";
 import MyWork from "./Components/Pages/MyWork";
+import { FaNetworkWired } from "react-icons/fa";
 
 const navItems = [
   {
@@ -22,7 +23,7 @@ const navItems = [
   {
     name: "My Works",
     link: "#mywork",
-    icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    icon: <FaNetworkWired className="h-4 w-4 text-neutral-500 dark:text-white" />,
   },
   {
     name: "Contact",
