@@ -29,11 +29,10 @@ const About = () => {
           <Col className="about_main_contents_wrap">
             <p className="about_me_text">About Me</p>
             <p className="name_text">
-              1.5 Year's Experience on Frontend Developer
+              2 Year's Experience on Frontend Developer
             </p>
             <span className="about_profession_content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+              Creative and detail-oriented front-end developer with a strong focus on React.js, skilled in designing and implementing efficient, user-friendly interfaces. With hands-on experience in HTML5, CSS3, JavaScript, and frameworks like Bootstrap, I bring a dynamic approach to building responsive, high-performance web applications. Proven ability to manage state using Redux Toolkit and integrate APIs with Axios and React Query for seamless data interactions. Committed to delivering intuitive, visually appealing digital experiences tailored to client needs.
             </span>
 
             <div className="home_action_btns_wrap">
